@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Detail - eLearning Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <header class="bg-purple-600 text-white shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">eLearning</div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="profile.html" class="hover:underline">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Course Detail -->
+  <div class="container mx-auto p-6">
+    <h2 id="courseTitle" class="text-3xl font-bold mb-6">Introduction to JavaScript</h2>
+
+    <!-- Video Embed -->
+    <div class="mb-6">
+      <iframe
+        id="courseVideo"
+        class="w-full h-96 rounded-lg shadow-lg"
+        src=""
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="mb-6">
+      <div class="w-full bg-gray-200 rounded-full h-2.5">
+        <div id="progressFill" class="bg-purple-600 h-2.5 rounded-full" style="width: 50%"></div>
+      </div>
+    </div>
+
+    <!-- Lessons List -->
+    <div class="mb-6">
+      <h3 class="text-xl font-semibold mb-4">Course Content</h3>
+      <div id="lessonsList" class="space-y-4">
+        <!-- Lessons will be dynamically added here -->
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-600 text-white py-6 mt-10">
+        <div class="container mx-auto text-center">
+          <p class="text-lg">&copy; 2023 eLearning Platform. All rights reserved.</p>
+          <p class="text-sm mt-2">Made with ❤️ by Your Team</p>
+        </div>
+      </footer>
+      
+  <script src="scripts\course.js"></script>
+</body>
+</html>
+

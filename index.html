@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eLearning Platform - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .jumbotron {
+      background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 930px; /* Increased height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <header class="bg-purple-600 text-white shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">eLearning</div>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="profile.html" class="hover:underline">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron text-white text-center">
+    <div class="container mx-auto px-6">
+      <h1 class="text-5xl font-bold mb-4">Learn Anytime, Anywhere</h1>
+      <p class="text-xl mb-8">Unlock your potential with our wide range of online courses.</p>
+      <a
+        href="#courseList"
+        id="exploreButton"
+        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
+      >
+        Explore Courses
+      </a>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="container mx-auto p-6">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search for courses..."
+      class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
+    />
+  </div>
+
+  <!-- Course List -->
+  <div id="courseList" class="container mx-auto p-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Course cards will be dynamically added here -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-purple-600 text-white py-6 mt-10">
+    <div class="container mx-auto text-center">
+      <p class="text-lg">&copy; 2025 eLearning Platform. All rights reserved.</p>
+      <p class="text-sm mt-2">Made with tailwind</p>
+    </div>
+  </footer>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
